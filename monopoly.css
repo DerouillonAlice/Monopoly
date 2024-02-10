@@ -25,6 +25,7 @@ ol {
   /* padding: 10px; */
   background-color: #dae9d4;
 box-shadow:3px 3px 10px rgba(0, 0, 0, 0.5);
+transform: rotate(180deg);
 }
 
 
@@ -183,7 +184,7 @@ li:nth-child(14) span,li:nth-child(15) span, li:nth-child(16) span {
 
 li:nth-child(17) img {
   width: 300px;
-  transform: rotate(-45deg);
+  transform: rotate(135deg);
 
 }
 
@@ -258,4 +259,41 @@ li:nth-child(18) span {
 
 font-size: 18px;
 transform: rotate(180deg);
+}
+
+
+
+li:not(:nth-last-child(-n+2)):not(:nth-child(17)):hover {
+  transform: scale(1.1); /* Ajustez la valeur selon vos préférences */
+}
+
+.chance, .communaute {
+  width: 200px;
+  height: 150px;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.chance:hover {
+  background-image: url('chance.png'); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; 
+  z-index: 1; 
+  color: transparent;
+}
+
+.communaute:hover {
+  background-image: url('base-monopoly--community-chest-dark.png'); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; 
+  z-index: 1; 
+  color: transparent;
 }
